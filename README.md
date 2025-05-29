@@ -8,7 +8,11 @@ Repositório dedicado a explorar e documentar funcionalidades de memória e cont
 
 - [**casos-uso-grafo-conhecimento.md**](./casos-uso-grafo-conhecimento.md): Documento detalhando os principais casos de uso de sistemas de memória baseados em grafo de conhecimento, especialmente útil para iniciantes em IA generativa que enfrentam desafios de organização e clareza.
 
+- [**melhores-casos-uso-iniciantes.md**](./melhores-casos-uso-iniciantes.md): Casos de uso específicos para iniciantes em IA generativa, focando em organização de conceitos, acompanhamento de progresso e estruturação de projetos.
+
 - [**exemplo-implementacao.md**](./exemplo-implementacao.md): Exemplo prático de implementação de um servidor de memória baseado em grafo de conhecimento em JavaScript, incluindo código completo e instruções para integração com IA generativa.
+
+- [**exemplo-implementacao-simplificada.md**](./exemplo-implementacao-simplificada.md): Versão simplificada da implementação, ideal para entender os conceitos básicos e começar rapidamente.
 
 - [**questionario-perfil-overthinking.md**](./questionario-perfil-overthinking.md): Questionário detalhado para mapear o perfil cognitivo de pessoas que sofrem com excesso de pensamento, alta criatividade e paralisia por análise.
 
@@ -36,6 +40,8 @@ O repositório aborda vários casos de uso para grafos de conhecimento, incluind
 
 4. **Organização de conhecimento complexo**: Facilitando a conexão entre conceitos e ideias para quem lida com alta criatividade e volume de informações.
 
+5. **Apoio ao aprendizado de IA generativa**: Ajudando iniciantes a organizar conceitos, acompanhar progresso e estruturar projetos práticos.
+
 ## Vantagens dos Grafos de Conhecimento para IA Generativa
 
 1. **Persistência de Contexto**: Mantém informações importantes entre sessões de interação
@@ -53,6 +59,7 @@ Este repositório visa:
 3. Fornecer recursos para desenvolvedores e pesquisadores interessados em sistemas de IA com memória persistente
 4. Compartilhar prompts e técnicas para maximizar a eficácia de memória contextual
 5. Oferecer ferramentas para melhorar a experiência de usuários com desafios cognitivos específicos
+6. Apoiar iniciantes em IA generativa com ferramentas práticas de organização
 
 ## Aplicações Práticas
 
@@ -62,6 +69,38 @@ Este repositório visa:
 - Interfaces conversacionais com personalização avançada
 - Sistemas de recomendação baseados em preferências e histórico
 - Suporte para pessoas com excesso de pensamento e paralisia por análise
+- Organização de conceitos e projetos para estudantes de IA
+
+## Como Começar
+
+### Para Iniciantes
+1. Leia [melhores-casos-uso-iniciantes.md](./melhores-casos-uso-iniciantes.md) para entender as aplicações
+2. Experimente a [implementação simplificada](./exemplo-implementacao-simplificada.md)
+3. Use o [questionário de perfil](./questionario-perfil-overthinking.md) para autoconhecimento
+
+### Para Desenvolvedores
+1. Estude a [implementação completa](./exemplo-implementacao.md)
+2. Adapte o [prompt de memória](./prompt-memoria.md) para seus casos de uso
+3. Explore os [casos de uso gerais](./casos-uso-grafo-conhecimento.md) para inspiração
+
+## Integração com Claude (MCP)
+
+Este repositório foi projetado para trabalhar com o Model Context Protocol (MCP) do Claude. Para usar:
+
+1. Instale o servidor de memória MCP:
+   ```bash
+   npx @modelcontextprotocol/server-memory
+   ```
+
+2. Configure no seu arquivo MCP do Claude:
+   ```json
+   "memory": {
+     "command": "npx",
+     "args": ["-y", "@modelcontextprotocol/server-memory"]
+   }
+   ```
+
+3. Use os prompts e estruturas deste repositório para maximizar a eficácia da memória persistente.
 
 ## Contribuições
 
@@ -71,3 +110,4 @@ Contribuições são bem-vindas! Se você tem experiência com implementações 
 
 - [Knowledge Augmented Generation (KAG)](https://www.cienciaedados.com/knowledge-augmented-generation-kag-integrando-conhecimento-estruturado-na-geracao-de-conteudo-para-aplicacoes-de-ia-generativa/)
 - [Retrieval-Augmented Generation (RAG)](https://www.datascienceacademy.com.br/blog/retrieval-augmented-generation-rag-melhores-praticas-e-casos-de-uso)
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
